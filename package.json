@@ -1,0 +1,38 @@
+{
+  "name": "exodus-edition",
+  "version": "1.0.0",
+  "description": "Juego Exodus Edition",
+  "author": "Jared",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.exodus.game",
+    "productName": "Exodus-Edition",
+    "directories": {
+      "output": "Juego-Final"
+    },
+    "win": {
+      "target": "dir",
+      "icon": "icono.ico"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json",
+      "config.json"
+    ],
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "extraFiles": [
+      "src/**",
+      "docs/**",
+      "media/**",
+      "assets/**"
+    ]
+  }
+}
+
